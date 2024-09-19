@@ -2,23 +2,23 @@
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="flex h-16 items-center justify-between">
             <div class="flex items-center">
-            <div class="flex-shrink-0">
-                <img class="h-8 w-8" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="">
-            </div>
-            <div class="hidden md:block">
-                <div class="ml-10 flex items-baseline space-x-4">
-                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                <x-nav-link href="/" :active="request()->is('/')">Home</x-nav-link>
-                <x-nav-link href="/posts" :active="request()->is('posts')">Profil</x-nav-link>
-                <x-nav-link href="/kejuruan" :active="request()->is('kejuruan')">Kejuruan</x-nav-link>
-                <x-nav-link href="/bkk" :active="request()->is('bkk')">BKK</x-nav-link>
-                <x-nav-link href="/ppdb" :active="request()->is('ppdb')">PPDB</x-nav-link>
+                <div class="flex-shrink-0">
+                    <a href="/" :active="request()->is('/')"><img class="h-8 w-8" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Logo SMK NU Kejaja"></a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                    <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                    <x-nav-link href="/" :active="request()->is('/')">Home</x-nav-link>
+                    <x-nav-link href="/posts" :active="request()->is('posts')">Profil</x-nav-link>
+                    <x-nav-link href="/kejuruan" :active="request()->is('kejuruan')">Kejuruan</x-nav-link>
+                    <x-nav-link href="/bkk" :active="request()->is('bkk')">BKK</x-nav-link>
+                    <x-nav-link href="/ppdb" :active="request()->is('ppdb')">PPDB</x-nav-link>
+                    </div>
                 </div>
             </div>
-            </div>
+
             <div class="hidden md:block">
             <div class="ml-4 flex items-center md:ml-6">
-
                 <!-- Profile dropdown -->
                 <div class="relative ml-3">
                 <div>
