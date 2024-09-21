@@ -1,4 +1,4 @@
-    <nav class="bg-gray-800" x-data="{ isOpen: false }">
+    <nav class="bg-green-800" x-data="{ isOpen: false }">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div class="flex h-32 items-center justify-between">
                 <div class="flex items-center">
@@ -8,7 +8,7 @@
                 </div>
                 <div class="flex items-center">
                     <div class="hidden md:block">
-                        <div class="ml-10 flex space-x-0 gap-y-0 items-baseline space-x-4">
+                        <div class="ml-10 flex gap-y-0 items-baseline">
                         <x-nav-link href="/" :active="request()->is('/')">Home</x-nav-link>
                         <x-nav-link href="/posts" :active="request()->is('posts')">Profil</x-nav-link>
                         <x-nav-link href="/kejuruan" :active="request()->is('kejuruan')">Kejuruan</x-nav-link>
