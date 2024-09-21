@@ -5,7 +5,7 @@ use illuminate\Support\Arr;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('home',['title'=>'Home Page']);
+    return view('home',['title'=>'Home']);
 });
 
 Route::get('/posts', function () {
@@ -20,11 +20,11 @@ Route::get('/authors/{user}', function (User $user) {
     return view('posts', ['title' => 'Articles by' . $user->name, 'posts' => $user->posts]);
 });
 Route::get('/kejuruan', function () {
-    return view('kejuruan', ['title' => 'Page Kejuruan']);
+    return view('kejuruan', ['title' => 'Kejuruan']);
 });
 Route::get('/bkk', function () {
-    return view('bkk',['title' => 'Page BKK']);
+    return view('bkk',['title' => 'BKK']);
 });
 Route::get('/ppdb', function () {
-    return view('ppdb', ['title' => 'Page PPDB']);
+    return view('ppdb', ['title' => 'PPDB']);
 });
