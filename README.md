@@ -7,7 +7,7 @@ SMK NU KEJAJAR adalah Sekolah yang terdiri dari Program Keahlian Rekayasa Perang
 SMK NU KEJAJAR yang terletak di Wonosobo yaitu di Jalan Raya Dieng Km.13 Kejajar yang berada di sekitar dataran tinggi Dieng. Adanya SMK NU KEJAJAR yaitu untuk mengembangkan minat masyarakat agar memiliki keinginan untuk mengenyam pendidikan menengah sehinggga dapat mengikuti perkembangan zaman yang dari tahun ke tahun terus berkembang.
 
 | Informasi       | Data                                  |
-| :-------------: |:-------------------------------------:|
+| :-------------  |:-------------------------------------:|
 | Nama Sekolah    | SMK NU Kejajar                        |
 | Alamat          | Jalan Raya Dieng Km.13 Buntu, Kejajar |
 | Kode Pos        | 56354                                 |
