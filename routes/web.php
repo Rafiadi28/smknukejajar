@@ -33,3 +33,6 @@ Route::get('/bkk', function () {
 Route::get('/ppdb', function () {
     return view('ppdb', ['title' => 'PPDB']);
 });
+Route::get('/index', function () {
+    return view('index', ['title' => 'PPDB']);
+});

@@ -1,9 +1,11 @@
-<nav class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" x-data="{ isOpen: false }">
+<nav class="container mx-auto max-w-full px-4 sm:px-6 lg:px-8" x-data="{ isOpen: false }">
     <div class="flex h-32 items-center justify-between">
         <div class="flex items-center">
             <div class="flex items-center justify-between">
-                <img class="h-8 w-8" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Logo SMK NU Kejajar">
-                <a href="/" :active="request()->is('/')" class="flex items-center font-bold text-4xl ml-2">SMK NU Kejajar</a>
+                <a href="/" class="flex items-center ">
+                    <img class="h-8 w-8" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Logo SMK NU Kejajar">
+                    <div class="font-bold text-4xl ml-2">SMK NU Kejajar</div>
+                </a>
             </div>
         </div>
         <div class="flex items-center">
