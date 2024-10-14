@@ -3,7 +3,7 @@
         <div class="flex items-center">
             <div class="flex items-center justify-between">
                 <a href="/" class="flex items-center ">
-                    <img class="h-8 w-8" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Logo SMK NU Kejajar">
+                    <img class="h-16 w-16" src="http://smknukejajar.sch.id/wp-content/uploads/2016/07/logo_smk.png" alt="Logo SMK NU Kejajar">
                     <div class="font-bold text-4xl ml-2">SMK NU Kejajar</div>
                 </a>
             </div>

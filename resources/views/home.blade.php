@@ -13,24 +13,28 @@
             <div><a href="">Selanjutnya</a></div>
         </div>
         <div class="relative flex flex-col w-full items-center">
-            <div class="flex justify-center rounded-3xl bg-green-500 px-12 py-12 my-6 -top-28">
-                <div class="text-center px-6">
-                    <div class="text-6xl">367</div>
-                    <div>Siswa</div>
+            <div class="bg-green-600 rounded-xl py-9 my-6">
+                <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                  <dl class="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-4">
+                    <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+                      <dt class="text-base leading-7 text-gray-700">Siswa</dt>
+                      <dd class="order-first text-3xl font-semibold tracking-tight text-black sm:text-5xl">367</dd>
+                    </div>
+                    <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+                      <dt class="text-base leading-7 text-gray-700">Alumni</dt>
+                      <dd class="order-first text-3xl font-semibold tracking-tight text-black sm:text-5xl">1.000+</dd>
+                    </div>
+                    <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+                      <dt class="text-base leading-7 text-gray-700">Alumni yang bekerja</dt>
+                      <dd class="order-first text-3xl font-semibold tracking-tight text-black sm:text-5xl">500+</dd>
+                    </div>
+                    <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+                        <dt class="text-base leading-7 text-gray-700">Alumni yang berkuliah</dt>
+                        <dd class="order-first text-3xl font-semibold tracking-tight text-black sm:text-5xl">500+</dd>
+                    </div>
+                  </dl>
                 </div>
-                <div class="text-center px-6">
-                    <div class="text-6xl">1.000+</div>
-                    <div>Alumni</div>
-                </div>
-                <div class="text-center px-6">
-                    <div class="text-6xl">500+</div>
-                    <div>Alumni yang bekerja</div>
-                </div>
-                <div class="text-center px-6">
-                    <div class="text-6xl">500+</div>
-                    <div>Alumni yang berkuliah</div>
-                </div>
-            </div>
+              </div>
         </div>
         <div class="relative flex w-full h-full place-content-center mb-8">
             <div class="flex justify-center w-4/5">
