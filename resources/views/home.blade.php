@@ -67,8 +67,7 @@
             </div>
         </div>
         <x-berita></x-berita>
-        <x-testimoni></x-testimoni>    
+        <x-testimoni></x-testimoni>
     </div>
-    <x-footer></x-footer>    
     <x-slot:title>{{ $title }}</x-slot:title>
 </x-layout>
