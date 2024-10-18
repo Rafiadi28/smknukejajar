@@ -1,21 +1,17 @@
 <?php
+
 namespace App\Models;
-use illuminate\Support\Arr;
-use Illuminate\Database\Eloquent\Model;
+
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
-Class Post extends Model // tabel profil_posts
+class Post extends Model
 {
-    use Hasfactory;
-    protected $fillable = ['title', 'author', 'slug', 'body'];
-public function author():BelongsTo
-    {
-        return $this->belongsTo(User::class);
-    }
+    use HasFactory;
 
-    public function category(): BelongsTo
+public function posts(): BelongsTo
     {
-        return $this->belongsTo(Category::class);
+    return $this-> BelongsTo(Post::class);
     }
 }
