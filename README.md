@@ -20,10 +20,12 @@ SMK NU KEJAJAR yang terletak di Wonosobo yaitu di Jalan Raya Dieng Km.13 Kejajar
 | Facebook        | SMK NU Kejajar                        |
 | Youtube         | SMK NU Kejajar                        |
 
-<!-- 1.Run git clone <my-cool-project>
-2.Run composer install
-3.Run cp .env.example .env
-4.Run php artisan key:generate
-5.Run php artisan migrate
-6.Run php artisan serve
-7.Go to link localhost:8000 -->
+<!-- 
+1.Run composer install
+2.Run cp .env.example .env
+3.Run php artisan key:generate
+4.Run php artisan migrate
+5.Run npm install
+6.Run php artisan serve and run npm run dev
+7.Go to link localhost:8000 
+-->
