@@ -2,7 +2,7 @@
     autoplayIntervalTime: 5000,
     slides: [
     {
-        imgSrc: '/img/1.png',
+        imgSrc: '/img/img-carousel/1.png',
         imgAlt: 'Vibrant abstract painting with swirling blue and light pink hues on a canvas.',
         title: 'SMK NU Kejajar',
         description: 'The architects of the digital world, constantly battling against their mortal enemy – browser compatibility.',
@@ -10,7 +10,7 @@
         ctaText: 'Situs SMK NU Kejajar',
     },
     {
-        imgSrc: '/img/4.jpg',
+        imgSrc: '/img/img-carousel/4.jpg',
         imgAlt: 'Vibrant abstract painting with swirling red, yellow, and pink hues on a canvas.',
         title: 'SMK PUSAT KEUNGGULAN',
         description: 'Because not all superheroes wear capes, some wear headphones and stare at terminal screens',
@@ -18,7 +18,7 @@
         ctaText: 'Daftar',
     },
     {
-        imgSrc: '/img/3.jpg',
+        imgSrc: '/img/img-carousel/3.jpg',
         imgAlt: 'Vibrant abstract painting with swirling blue and purple hues on a canvas.',
         title: 'TEACHING FACTORY ',
         description: 'Where &quot;burnout&quot; is just a fancy term for &quot;Tuesday&quot;.',
@@ -26,7 +26,7 @@
         ctaText: 'Become a Developer',
     },
     {
-        imgSrc: '/img/5.jpeg',
+        imgSrc: '/img/img-carousel/5.jpeg',
         imgAlt: 'Vibrant abstract painting with swirling blue and purple hues on a canvas.',
         title: 'Kurikulum Berbasis Industri',
         description: 'Where &quot;burnout&quot; is just a fancy term for &quot;Tuesday&quot;.',
