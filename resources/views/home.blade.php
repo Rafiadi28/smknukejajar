@@ -16,7 +16,8 @@
 
     <!-- Profil Sekolah -->
     <div class="relative isolate overflow-hidden bg-gray-900 py-16 sm:py-20 md:py-24">
-        <img src="https://images.unsplash.com/photo-1527891751199-7225231a68dd?q=80&w=2070&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center">
+        <span class="absolute inset-0 -z-10 object-cover bg-gradient-to-l from-black to-gray-900 opacity-90"></span>
+        <img src="/img/1.png" alt="" class="absolute inset-0 -z-20 h-full w-full object-cover object-right md:object-center">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
             <div class="mx-auto max-w-2xl text-center lg:text-start lg:mx-0">
                 <h2 class="text-4xl font-bold tracking-tight text-white md:text-6xl">Tentang SMK NU Kejajar</h2>
