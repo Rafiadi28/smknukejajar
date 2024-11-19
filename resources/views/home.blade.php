@@ -4,24 +4,23 @@
     <!-- Logo Mitra Kerja -->
     <div class="bg-white py-12 sm:py-16">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
-            <div class="mx-auto grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-                <img class="col-span-4 max-h-12 w-full object-contain sm:col-span-2 lg:col-span-1 transition-all transform duration-300 hover:scale-125" src="https://tailwindui.com/plus/img/logos/158x48/transistor-logo-gray-900.svg" alt="Transistor" width="158" height="48">
-                <img class="col-span-4 max-h-12 w-full object-contain sm:col-span-2 lg:col-span-1 transition-all transform duration-300 hover:scale-125" src="https://tailwindui.com/plus/img/logos/158x48/reform-logo-gray-900.svg" alt="Reform" width="158" height="48">
-                <img class="col-span-4 max-h-12 w-full object-contain sm:col-span-2 lg:col-span-1 transition-all transform duration-300 hover:scale-125" src="https://tailwindui.com/plus/img/logos/158x48/tuple-logo-gray-900.svg" alt="Tuple" width="158" height="48">
-                <img class="col-span-4 max-h-12 w-full object-contain sm:col-span-2 sm:col-start-2 lg:col-span-1 transition-all transform duration-300 hover:scale-125" src="https://tailwindui.com/plus/img/logos/158x48/savvycal-logo-gray-900.svg" alt="SavvyCal" width="158" height="48">
-                <img class="col-span-4 max-h-12 w-full object-contain sm:col-span-2 lg:col-span-1 transition-all transform duration-300 hover:scale-125" src="https://tailwindui.com/plus/img/logos/158x48/statamic-logo-gray-900.svg" alt="Statamic" width="158" height="48">
+            <div class="mx-auto grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:gap-x-10 lg:mx-0 lg:max-w-none">
+                <img class="col-span-4 max-h-12 w-full object-contain sm:col-span-2 lg:col-span-1 transition-all transform duration-300 hover:scale-125" src="/img/logo-mitra/logo-rita-pasaraya.png" alt="Rita Pasaraya">
+                <img class="col-span-4 max-h-12 w-full object-contain sm:col-span-2 lg:col-span-1 transition-all transform duration-300 hover:scale-125" src="/img/logo-mitra/logo-bank-wonosobo.png" alt="Bank Wonosobo">
+                <img class="col-span-4 max-h-12 w-full object-contain sm:col-span-2 lg:col-span-1 transition-all transform duration-300 hover:scale-125" src="/img/logo-mitra/logo-ahass-honda.png" alt="Ahass Honda">
+                <img class="col-span-4 max-h-12 w-full object-contain sm:col-span-2 lg:col-span-1 transition-all transform duration-300 hover:scale-125" src="/img/logo-mitra/logo-dieng-cyber.png" alt="Dieng Cyber">
             </div>
         </div>
     </div>
 
     <!-- Profil Sekolah -->
     <div class="relative isolate overflow-hidden bg-gray-900 py-16 sm:py-20 md:py-24">
-        <span class="absolute inset-0 -z-10 object-cover bg-gradient-to-l from-black to-gray-900 opacity-90"></span>
+        <span class="absolute inset-0 -z-10 object-cover bg-gradient-to-r from-black from-40% to-zinc-900 opacity-90"></span>
         <img src="/img/1.png" alt="" class="absolute inset-0 -z-20 h-full w-full object-cover object-right md:object-center">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
             <div class="mx-auto max-w-2xl text-center lg:text-start lg:mx-0">
                 <h2 class="text-4xl font-bold tracking-tight text-white md:text-6xl">Tentang SMK NU Kejajar</h2>
-                <p class="mt-6 text-lg leading-8 text-gray-300">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
+                <p class="mt-6 text-lg leading-8 text-gray-300">SMK NU Kejajar yang terletak di Wonosobo yaitu di Jalan Raya Dieng Km.13 Kejajar yang berada di sekitar dataran tinggi Dieng. Adanya SMK NU Kejajar yaitu untuk mengembangkan minat masyarakat agar memiliki keinginan untuk mengenyam pendidikan menengah sehinggga dapat mengikuti perkembangan zaman yang dari tahun ke tahun terus berkembang.</p>
             </div>
             <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
                 <div class="grid grid-cols-3 gap-x-2 gap-y-6 text-base font-semibold leading-7 text-white sm:gap-x-8 lg:gap-x-10">

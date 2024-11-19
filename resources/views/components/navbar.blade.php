@@ -2,8 +2,8 @@
     <div class="px-8 sm:px-9 lg:px-10 bg-black transition-colors duration-300 ease-in-out" :class="{'bg-black': !atTop, 'bg-transparent': atTop}">
         <div class="flex h-32 w-full items-center justify-between">
             <div class="flex gap-3 items-center justify-between">
-                <img class="h-8 w-8" src="http://smknukejajar.sch.id/wp-content/uploads/2016/07/logo_smk.png" alt="SMK NU Kejajar">
-                <span class="font-bold text-black" :class="{'text-white': !atTop || isOpen }">SMK NU Kejajar</span>
+                <img class="h-20 w-20" src="http://smknukejajar.sch.id/wp-content/uploads/2016/07/logo_smk.png" alt="SMK NU Kejajar">
+                <span class="font-bold text-4xl text-black" :class="{'text-white': !atTop || isOpen }">SMK NU Kejajar</span>
             </div>
             <div class="hidden lg:block">
                 <div class="ml-10 flex items-baseline space-x-1">

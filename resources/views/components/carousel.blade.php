@@ -14,7 +14,7 @@
         imgAlt: 'Vibrant abstract painting with swirling red, yellow, and pink hues on a canvas.',
         title: 'SMK PUSAT KEUNGGULAN',
         description: 'Because not all superheroes wear capes, some wear headphones and stare at terminal screens',
-        ctaUrl: '/posts',
+        ctaUrl: '/ppdb',
         ctaText: 'Daftar',
     },
     {
@@ -22,7 +22,7 @@
         imgAlt: 'Vibrant abstract painting with swirling blue and purple hues on a canvas.',
         title: 'TEACHING FACTORY ',
         description: 'Where &quot;burnout&quot; is just a fancy term for &quot;Tuesday&quot;.',
-        ctaUrl: 'https://example.com',
+        ctaUrl: null,
         ctaText: 'Become a Developer',
     },
     {
@@ -30,7 +30,7 @@
         imgAlt: 'Vibrant abstract painting with swirling blue and purple hues on a canvas.',
         title: 'Kurikulum Berbasis Industri',
         description: 'Where &quot;burnout&quot; is just a fancy term for &quot;Tuesday&quot;.',
-        ctaUrl: 'https://example.com',
+        ctaUrl: null,
         ctaText: 'Become a Developer',
     },
     ],
