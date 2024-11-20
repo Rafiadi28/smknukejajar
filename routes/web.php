@@ -24,8 +24,8 @@ Route::get('/categories/{category:slug}', function (Category $category) {
 
     return view('posts', ['title' =>  ' Articles in: ' . $category->name, 'posts' => $category->posts]);
 });
-Route::get('/kejuruan', function () {
-    return view('kejuruan', ['title' => 'Kejuruan']);
+Route::get('/jurusan', function () {
+    return view('jurusan', ['title' => 'jurusan']);
 });
 Route::get('/bkk', function () {
     return view('bkk',['title' => 'BKK']);
@@ -33,6 +33,6 @@ Route::get('/bkk', function () {
 Route::get('/ppdb', function () {
     return view('ppdb', ['title' => 'PPDB']);
 });
-Route::get('/index', function () {
-    return view('index', ['title' => 'PPDB']);
+Route::get('/berita', function () {
+    return view('berita', ['title' => 'Berita']);
 });

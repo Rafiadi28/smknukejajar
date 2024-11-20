@@ -1,5 +1,5 @@
-<nav x-data="{ isOpen: false, atTop: true }" @scroll.window="atTop = (window.pageYOffset > 400 ? false : true)" class="fixed mx-auto z-50 w-full" :class="{'bg-black': isOpen}" @click.outside="isOpen = false">
-    <div class="px-8 sm:px-9 lg:px-10 bg-black transition-colors duration-300 ease-in-out" :class="{'bg-black': !atTop, 'bg-transparent': atTop}">
+<nav x-data="{ isOpen: false, atTop: true }" @scroll.window="atTop = (window.pageYOffset > 400 ? false : true)" class="fixed mx-auto z-50 w-full" :class="{'bg-clr-primary': isOpen}" @click.outside="isOpen = false">
+    <div class="px-8 sm:px-9 lg:px-10 bg-clr-primary transition-colors duration-300 ease-in-out" :class="{'bg-clr-primary': !atTop, 'bg-transparent': atTop}">
         <div class="flex h-32 w-full items-center justify-between">
             <div class="flex gap-5 items-center justify-between">
                 <template x-if="atTop">
@@ -23,7 +23,7 @@
                             </svg>
                         </x-nav-link>
                         <!-- Dropdown Menu -->
-                        <div x-cloak x-show="isOpen || openedWithKeyboard" x-transition x-trap="openedWithKeyboard" @click.outside="isOpen = false, openedWithKeyboard = false" @keydown.down.prevent="$focus.wrap().next()" @keydown.up.prevent="$focus.wrap().previous()" class="absolute top-11 left-0 flex w-full min-w-[12rem] flex-col overflow-hidden border border-gray-900 bg-neutral-900" role="menu">
+                        <div x-cloak x-show="isOpen || openedWithKeyboard" x-transition x-trap="openedWithKeyboard" @click.outside="isOpen = false, openedWithKeyboard = false" @keydown.down.prevent="$focus.wrap().next()" @keydown.up.prevent="$focus.wrap().previous()" class="absolute top-11 left-0 flex w-full min-w-[12rem] flex-col overflow-hidden border border-clr-primary bg-clr-secondary" role="menu">
                             <x-nav-link href="/jurusan" :active="request()->is('jurusan')">Sejarah</x-nav-link>
                             <x-nav-link href="/berita" :active="request()->is('berita')">Visi dan Misi</x-nav-link>
                             <x-nav-link href="/bkk" :active="request()->is('bkk')">Fasilitas</x-nav-link>
@@ -40,7 +40,7 @@
                             </svg>
                         </x-nav-link>
                         <!-- Dropdown Menu -->
-                        <div x-cloak x-show="isOpen || openedWithKeyboard" x-transition x-trap="openedWithKeyboard" @click.outside="isOpen = false, openedWithKeyboard = false" @keydown.down.prevent="$focus.wrap().next()" @keydown.up.prevent="$focus.wrap().previous()" class="absolute top-11 left-0 flex w-full min-w-[12rem] flex-col overflow-hidden border border-gray-900 bg-neutral-900" role="menu">
+                        <div x-cloak x-show="isOpen || openedWithKeyboard" x-transition x-trap="openedWithKeyboard" @click.outside="isOpen = false, openedWithKeyboard = false" @keydown.down.prevent="$focus.wrap().next()" @keydown.up.prevent="$focus.wrap().previous()" class="absolute top-11 left-0 flex w-full min-w-[12rem] flex-col overflow-hidden border border-clr-primary bg-clr-secondary" role="menu">
                             <x-nav-link href="/jurusan" :active="request()->is('jurusan')">Akuntansi dan Keuangan Lembaga</x-nav-link>
                             <x-nav-link href="/berita" :active="request()->is('berita')">Otomatisasi dan Tata Kelola Perkantoran</x-nav-link>
                             <x-nav-link href="/bkk" :active="request()->is('bkk')">Pengembangan Perangkat Lunak dan Gim</x-nav-link>
