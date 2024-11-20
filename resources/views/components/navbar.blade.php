@@ -1,8 +1,13 @@
 <nav x-data="{ isOpen: false, atTop: true }" @scroll.window="atTop = (window.pageYOffset > 400 ? false : true)" class="fixed mx-auto z-50 w-full" :class="{'bg-black': isOpen}" @click.outside="isOpen = false">
     <div class="px-8 sm:px-9 lg:px-10 bg-black transition-colors duration-300 ease-in-out" :class="{'bg-black': !atTop, 'bg-transparent': atTop}">
         <div class="flex h-32 w-full items-center justify-between">
-            <div class="flex gap-3 items-center justify-between">
-                <img class="h-20 w-20" src="http://smknukejajar.sch.id/wp-content/uploads/2016/07/logo_smk.png" alt="SMK NU Kejajar">
+            <div class="flex gap-5 items-center justify-between">
+                <template x-if="atTop">
+                    <img class="h-16 w-16" src="/img/logo-smk/logo-smk-nu-kejajar-hitam.png" alt="SMK NU Kejajar">
+                </template>
+                <template x-if="!atTop">
+                    <img class="h-16 w-16" src="/img/logo-smk/logo-smk-nu-kejajar-putih.png" alt="SMK NU Kejajar">
+                </template>
                 <span class="font-bold text-4xl text-black" :class="{'text-white': !atTop || isOpen }">SMK NU Kejajar</span>
             </div>
             <div class="hidden lg:block">
