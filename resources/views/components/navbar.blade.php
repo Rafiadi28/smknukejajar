@@ -3,10 +3,10 @@
         <div class="flex h-32 w-full items-center justify-between">
             <div class="flex gap-5 items-center justify-between">
                 <template x-if="atTop">
-                    <img class="h-16 w-16" src="/img/logo-smk/logo-smk-nu-kejajar-hitam.png" alt="SMK NU Kejajar">
+                    <img class="h-20 w-20" src="/img/logo-smk/logo-smk-hitam.svg" alt="SMK NU Kejajar">
                 </template>
                 <template x-if="!atTop">
-                    <img class="h-16 w-16" src="/img/logo-smk/logo-smk-nu-kejajar-putih.png" alt="SMK NU Kejajar">
+                    <img class="h-20 w-20" src="/img/logo-smk/logo-smk-putih.svg" alt="SMK NU Kejajar">
                 </template>
                 <span class="font-bold text-4xl text-black" :class="{'text-white': !atTop || isOpen }">SMK NU Kejajar</span>
             </div>
