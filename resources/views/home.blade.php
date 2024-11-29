@@ -108,25 +108,25 @@
             <h2 class="text-center text-3xl font-semibold text-black">Berita, Artikel dan Informasi</h2>
             <p class="mx-auto mt-2 max-w-lg text-pretty text-center text-xl font-medium tracking-tight text-gray-950">Kumpulan pengumuman, berita, artikel dan informasi di SMK NU Kejajar</p>
             <div class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-12 sm:pt-12 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-                @for ($i = 0; $i < 3; $i++)
+
                 <article class="flex max-w-2xl flex-col items-start justify-between gap-y-2 lg:max-w-xl">
                     <span class="absolute inset-0"></span>
                     <div class="max-h-56 overflow-hidden">
                         <a href="#">
-                            <img src="https://images.unsplash.com/photo-1527965408463-82ae0731825c?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Berita" class="object-cover">
+                            <img src="/img/img-berita/classmeet.jpg" alt="Berita" class="object-cover">
                         </a>
                     </div>
                     <div class="flex items-center gap-x-4 text-xs">
-                        <time datetime="2020-03-16" class="text-gray-500">Mar 16, 2020</time>
+                        <time datetime="2020-03-16" class="text-gray-500">Mar 16, 2023</time>
                     </div>
                     <div class="group relative">
                         <h3 class="text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
                             <a href="#">
                             <span class="absolute inset-0"></span>
-                            Boost your conversion rate
+                                Kegiatan Class Meeting
                             </a>
                         </h3>
-                        <p class="mt-2 line-clamp-3 text-sm leading-6 text-gray-600">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
+                        <p class="mt-2 line-clamp-3 text-sm leading-6 text-gray-600">SMK NU Kejajar Mengadakan Class Meeting dalam rangka memeriahkan kegiatan osis setelah menempuh PSAS Semester Ganjil Tahun 2023/2024.</p>
                     </div>
                     <div class="mt-1 flex items-center text-xs">
                         <a href="#" class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Marketing</a>
@@ -145,7 +145,78 @@
                         </div>
                     </div>
                 </article>
-                @endfor
+                <article class="flex max-w-2xl flex-col items-start justify-between gap-y-2 lg:max-w-xl">
+                    <span class="absolute inset-0"></span>
+                    <div class="max-h-56 overflow-hidden">
+                        <a href="#">
+                            <img src="/img/img-berita/otkp.jpg" alt="Berita" class="object-cover">
+                        </a>
+                    </div>
+                    <div class="flex items-center gap-x-4 text-xs">
+                        <time datetime="2020-03-16" class="text-gray-500">Mar 16, 2023</time>
+                    </div>
+                    <div class="group relative">
+                        <h3 class="text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                            <a href="#">
+                            <span class="absolute inset-0"></span>
+                            Kegiatan Gelar Karya Siswa
+                            </a>
+                        </h3>
+                        <p class="mt-2 line-clamp-3 text-sm leading-6 text-gray-600">SMK NU Kejajar Mengadakan Kegiatan P5 yaitu Gelar Karya yang di tampilkan oleh siswa kelas X dan XI </p>
+                    </div>
+                    <div class="mt-1 flex items-center text-xs">
+                        <a href="#" class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Marketing</a>
+                    </div>
+                    <div class="relative flex items-center gap-x-2">
+                        <svg class="size-6 text-gray-900" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd" d="M12 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm-2 9a4 4 0 0 0-4 4v1a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-1a4 4 0 0 0-4-4h-4Z" clip-rule="evenodd"/>
+                        </svg>
+                        <div class="text-sm/6">
+                            <p class="font-semibold text-gray-900">
+                            <a href="#">
+                                <span class="absolute inset-0"></span>
+                                Admin SMK NU Kejajar
+                            </a>
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                <article class="flex max-w-2xl flex-col items-start justify-between gap-y-2 lg:max-w-xl">
+                    <span class="absolute inset-0"></span>
+                    <div class="max-h-56 overflow-hidden">
+                        <a href="#">
+                            <img src="/img/img-berita/pramuka.jpg" alt="Berita" class="object-cover">
+                        </a>
+                    </div>
+                    <div class="flex items-center gap-x-4 text-xs">
+                        <time datetime="2020-03-16" class="text-gray-500">Mar 16, 2023</time>
+                    </div>
+                    <div class="group relative">
+                        <h3 class="text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                            <a href="#">
+                            <span class="absolute inset-0"></span>
+                            Juara 1 Perbhasama Tingkat Kabupaten
+                            </a>
+                        </h3>
+                        <p class="mt-2 line-clamp-3 text-sm leading-6 text-gray-600">Pada Tahun 2023 SMK NU Kejajar Mengkuti Kegiatan Perbhasama Se-Ma'arif Tingkat Kabupaten Wonosobo, SMK NU kejajar Mendapatkan Juara 1 Tingkat Kabupaten Wonosobo.</p>
+                    </div>
+                    <div class="mt-1 flex items-center text-xs">
+                        <a href="#" class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Marketing</a>
+                    </div>
+                    <div class="relative flex items-center gap-x-2">
+                        <svg class="size-6 text-gray-900" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd" d="M12 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm-2 9a4 4 0 0 0-4 4v1a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-1a4 4 0 0 0-4-4h-4Z" clip-rule="evenodd"/>
+                        </svg>
+                        <div class="text-sm/6">
+                            <p class="font-semibold text-gray-900">
+                            <a href="#">
+                                <span class="absolute inset-0"></span>
+                                Admin SMK NU Kejajar
+                            </a>
+                            </p>
+                        </div>
+                    </div>
+                </article>
             </div>
         </div>
     </div>
