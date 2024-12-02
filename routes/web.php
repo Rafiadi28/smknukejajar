@@ -36,3 +36,6 @@ Route::get('/ppdb', function () {
 Route::get('/berita', function () {
     return view('berita', ['title' => 'Berita']);
 });
+Route::get('/login', function () {
+    return view('admin.login', ['title' => 'login']);
+});
