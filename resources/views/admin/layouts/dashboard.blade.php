@@ -2,12 +2,6 @@
 <!-- https://github.com/neurolinker/popice -->
 <script src="https://cdn.tailwindcss.com"> </script>
 
-
-
-<!-- component -->
-<!-- full tailwind config using javascript -->
-<!-- https://github.com/neurolinker/popice -->
-
 <html>
     <body class = "body bg-white dark:bg-[#0F172A]">
     <div class = "fixed w-full z-30 flex bg-white dark:bg-[#0F172A] p-2 items-center justify-center h-16 px-10">
