@@ -1,4 +1,7 @@
 <?php
+
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\DashboardController;
 use App\Models\Post;
 use App\Models\User;
 use App\Models\Category;
@@ -36,9 +39,9 @@ Route::get('/ppdb', function () {
 Route::get('/berita', function () {
     return view('berita', ['title' => 'Berita']);
 });
-Route::get('/login', function () {
-    return view('admin.auth.login', ['title' => 'login']);
-});
-Route::get('/dashboard', function () {
-    return view('admin.layouts.dashboard', ['title' => 'dashboard']);
-});
+
+//AdminRoute
+Route::get('/login', [AuthController::class, 'index'])->name ('login');
+Route::post('/login', [AuthController::class, 'authenticate']);
+Route::post('/logout', [AuthController::class, 'logout']);
+Route::get('/dashboard', [DashboardController::class, 'index'])->name ('dashboard')->middleware('auth');
