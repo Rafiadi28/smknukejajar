@@ -10,8 +10,8 @@ class Post extends Model
 {
     use HasFactory;
 
-public function posts(): BelongsTo
+    public function posts(): BelongsTo
     {
-    return $this-> BelongsTo(Post::class);
+        return $this-> BelongsTo(Post::class);
     }
 }

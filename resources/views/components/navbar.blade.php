@@ -13,44 +13,53 @@
             <div class="hidden lg:block">
                 <div class="ml-10 flex items-baseline space-x-1">
                     <!-- Navbar Link -->
-                    <x-nav-link href="/" :active="request()->is('/')">Beranda</x-nav-link>
-                    <div x-data="{ isOpen: false, openedWithKeyboard: false, leaveTimeout: null }" @mouseleave.prevent="leaveTimeout = setTimeout(() => { isOpen = false }, 250)" @mouseenter="leaveTimeout ? clearTimeout(leaveTimeout) : true" @keydown.esc.prevent="isOpen = false, openedWithKeyboard = false" @click.outside="isOpen = false, openedWithKeyboard = false" class="relative">
-                        <!-- Toggle Button -->
-                        <x-nav-link type="button" @mouseover="isOpen = true" @keydown.space.prevent="openedWithKeyboard = true" @keydown.enter.prevent="openedWithKeyboard = true" @keydown.down.prevent="openedWithKeyboard = true" href="/profil" :active="request()->is('profil')" aria-expanded="isOpen || openedWithKeyboard" aria-haspopup="true">
-                            Profil
-                            <svg aria-hidden="true" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="4" stroke="currentColor" class="pt-1 size-4 rotate-0">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
-                            </svg>
-                        </x-nav-link>
-                        <!-- Dropdown Menu -->
-                        <div x-cloak x-show="isOpen || openedWithKeyboard" x-transition x-trap="openedWithKeyboard" @click.outside="isOpen = false, openedWithKeyboard = false" @keydown.down.prevent="$focus.wrap().next()" @keydown.up.prevent="$focus.wrap().previous()" class="absolute top-11 left-0 flex w-full min-w-[12rem] flex-col overflow-hidden border border-clr-primary bg-clr-secondary" role="menu">
-                            <x-nav-link href="/jurusan" :active="request()->is('jurusan')">Sejarah</x-nav-link>
-                            <x-nav-link href="/berita" :active="request()->is('berita')">Visi dan Misi</x-nav-link>
-                            <x-nav-link href="/bkk" :active="request()->is('bkk')">Fasilitas</x-nav-link>
-                            <x-nav-link href="/ppdb" :active="request()->is('ppdb')">Ekstrakulikuler</x-nav-link>
-                        </div>
-                    </div>
-                    <x-nav-link href="/profil" :active="request()->is('profil')">Profil</x-nav-link>
-                    <div x-data="{ isOpen: false, openedWithKeyboard: false, leaveTimeout: null }" @mouseleave.prevent="leaveTimeout = setTimeout(() => { isOpen = false }, 250)" @mouseenter="leaveTimeout ? clearTimeout(leaveTimeout) : true" @keydown.esc.prevent="isOpen = false, openedWithKeyboard = false" @click.outside="isOpen = false, openedWithKeyboard = false" class="relative">
-                        <!-- Toggle Button -->
-                        <x-nav-link type="button" @mouseover="isOpen = true" @keydown.space.prevent="openedWithKeyboard = true" @keydown.enter.prevent="openedWithKeyboard = true" @keydown.down.prevent="openedWithKeyboard = true" href="/jurusan" :active="request()->is('jurusan')" aria-expanded="isOpen || openedWithKeyboard" aria-haspopup="true">
-                            Jurusan
-                            <svg aria-hidden="true" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="4" stroke="currentColor" class="pt-1 size-4 rotate-0">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
-                            </svg>
-                        </x-nav-link>
-                        <!-- Dropdown Menu -->
-                        <div x-cloak x-show="isOpen || openedWithKeyboard" x-transition x-trap="openedWithKeyboard" @click.outside="isOpen = false, openedWithKeyboard = false" @keydown.down.prevent="$focus.wrap().next()" @keydown.up.prevent="$focus.wrap().previous()" class="absolute top-11 left-0 flex w-full min-w-[12rem] flex-col overflow-hidden border border-clr-primary bg-clr-secondary" role="menu">
-                            <x-nav-link href="/jurusan" :active="request()->is('jurusan')">Akuntansi dan Keuangan Lembaga</x-nav-link>
-                            <x-nav-link href="/berita" :active="request()->is('berita')">Otomatisasi dan Tata Kelola Perkantoran</x-nav-link>
-                            <x-nav-link href="/bkk" :active="request()->is('bkk')">Pengembangan Perangkat Lunak dan Gim</x-nav-link>
-                            <x-nav-link href="/ppdb" :active="request()->is('ppdb')">Teknik Otomotif</x-nav-link>
-                        </div>
-                    </div>
-                    <x-nav-link href="/jurusan" :active="request()->is('jurusan')">Jurusan</x-nav-link>
-                    <x-nav-link href="/berita" :active="request()->is('berita')">Berita</x-nav-link>
-                    <x-nav-link href="/bkk" :active="request()->is('bkk')">BKK</x-nav-link>
-                    <x-nav-link href="/ppdb" :active="request()->is('ppdb')">PPDB</x-nav-link>
+                    <ul x-data="{ isOpen: false, leaveTimeout: null}" class="ml-10 flex items-baseline space-x-1">
+                        <!-- Navbar Link -->
+                        <li>
+                            <x-nav-link href="/" :active="request()->is('/')">Beranda</x-nav-link>
+                        </li>
+                        <li class="relative group px-4 py-3 text-sm font-medium" :class="{'{{ request()->is('profil') ? 'bg-clr-secondary text-clr-black' : 'text-clr-white hover:bg-clr-secondary hover:text-clr-black' }}': !atTop, '{{ request()->is('profil') ? 'bg-clr-primary text-clr-white' : 'text-clr-black hover:bg-clr-primary hover:text-clr-white' }}': atTop}" aria-current="{{ request()->is('profil') ? 'page' : false }}" type="button" aria-expanded="isOpen" aria-haspopup="true" aria-hidden="!isOpen">
+                            <!-- Toggle Button -->
+                            <a href="/profil" class="flex">
+                                Profil
+                                <svg aria-hidden="true" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="4" stroke="currentColor" class="pt-1 size-4 rotate-0">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
+                                </svg>
+                            </a>
+                            <!-- Dropdown Menu -->
+                            <div class="absolute group-hover:block top-11 left-0 hidden w-full min-w-[12rem] flex-col overflow-hidden border border-clr-primary bg-clr-secondary" role="menu">
+                                <x-nav-link href="/jurusan" :active="request()->is('jurusan')">Sejarah</x-nav-link>
+                                <x-nav-link href="/berita" :active="request()->is('berita')">Visi dan Misi</x-nav-link>
+                                <x-nav-link href="/bkk" :active="request()->is('bkk')">Fasilitas</x-nav-link>
+                                <x-nav-link href="/ppdb" :active="request()->is('ppdb')">Ekstrakulikuler</x-nav-link>
+                            </div>
+                        </li>
+                        <li class="relative group px-4 py-3 text-sm font-medium" :class="{'{{ request()->is('jurusan') ? 'bg-clr-secondary text-clr-black' : 'text-clr-white hover:bg-clr-secondary hover:text-clr-black' }}': !atTop, '{{ request()->is('jurusan') ? 'bg-clr-primary text-clr-white' : 'text-clr-black hover:bg-clr-primary hover:text-clr-white' }}': atTop}" aria-current="{{ request()->is('jurusan') ? 'page' : false }}" type="button" aria-expanded="isOpen" aria-haspopup="true" aria-hidden="!isOpen">
+                            <!-- Toggle Button -->
+                            <a href="/jurusan" class="flex">
+                                Jurusan
+                                <svg aria-hidden="true" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="4" stroke="currentColor" class="pt-1 size-4 rotate-0">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
+                                </svg>
+                            </a>
+                            <!-- Dropdown Menu -->
+                            <div class="absolute group-hover:block top-11 left-0 hidden w-full min-w-[12rem] flex-col overflow-hidden border border-clr-primary bg-clr-secondary" role="menu">
+                                <x-nav-link href="/profil" :active="request()->is('profil')">Akuntasi dan Keuangan Lembaga</x-nav-link>
+                                <x-nav-link href="/berita" :active="request()->is('berita')">Otomatisasi dan Tata Kelola Perkantoran</x-nav-link>
+                                <x-nav-link href="/bkk" :active="request()->is('bkk')">Pengembangan Perangkat Lunak dan Gim</x-nav-link>
+                                <x-nav-link href="/ppdb" :active="request()->is('ppdb')">Teknik Otomotif</x-nav-link>
+                            </div>
+                        </li>
+                        <li>
+                            <x-nav-link href="/berita" :active="request()->is('berita')">Berita</x-nav-link>
+                        </li>
+                        <li>
+                            <x-nav-link href="/bkk" :active="request()->is('bkk')">BKK</x-nav-link>
+                        </li>
+                        <li>
+                            <x-nav-link href="/ppdb" :active="request()->is('ppdb')">PPDB</x-nav-link>
+                        </li>
+                    </ul>
                 </div>
             </div>
 
