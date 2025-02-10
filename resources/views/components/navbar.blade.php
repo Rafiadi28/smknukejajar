@@ -27,7 +27,7 @@
                                 </svg>
                             </a>
                             <!-- Dropdown Menu -->
-                            <div class="absolute group-hover:block top-11 left-0 hidden w-full min-w-[12rem] flex-col overflow-hidden border border-clr-primary bg-clr-secondary" role="menu">
+                            <div class="absolute group-hover:block top-11 left-0 hidden w-full min-w-[12rem] flex-col overflow-hidden border" :class="!atTop ? 'border-clr-secondary bg-clr-primary ':' border-clr-primary bg-clr-secondary'" role="menu">
                                 <x-nav-link href="/jurusan" :active="request()->is('jurusan')">Sejarah</x-nav-link>
                                 <x-nav-link href="/berita" :active="request()->is('berita')">Visi dan Misi</x-nav-link>
                                 <x-nav-link href="/bkk" :active="request()->is('bkk')">Fasilitas</x-nav-link>
@@ -43,7 +43,7 @@
                                 </svg>
                             </a>
                             <!-- Dropdown Menu -->
-                            <div class="absolute group-hover:block top-11 left-0 hidden w-full min-w-[12rem] flex-col overflow-hidden border border-clr-primary bg-clr-secondary" role="menu">
+                            <div class="absolute group-hover:block top-11 left-0 hidden w-full min-w-[12rem] flex-col overflow-hidden border" :class="!atTop ? 'border-clr-secondary bg-clr-primary ':' border-clr-primary bg-clr-secondary'" role="menu">
                                 <x-nav-link href="/profil" :active="request()->is('profil')">Akuntasi dan Keuangan Lembaga</x-nav-link>
                                 <x-nav-link href="/berita" :active="request()->is('berita')">Otomatisasi dan Tata Kelola Perkantoran</x-nav-link>
                                 <x-nav-link href="/bkk" :active="request()->is('bkk')">Pengembangan Perangkat Lunak dan Gim</x-nav-link>
