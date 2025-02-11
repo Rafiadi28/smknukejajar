@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 
@@ -21,7 +22,7 @@ class AuthController extends Controller
         $validator = Validator::make($request->all(), [
             'name' => 'required|string|max:255',
             'email' => 'required|email:rfc,dns|unique:Users,email',
-            'password' => 'required'
+            'password' => 'required|confirmed',
         ]);
 
         if ($validator->fails()) {
@@ -39,5 +40,46 @@ class AuthController extends Controller
             'message' => 'User berhasil dibuat!',
             'user' => $user,
         ], 201);
+    }
+
+    /**
+     * login
+     * 
+     * @param mixed $request
+     * @return void
+     */
+    public function login(Request $request)
+    {
+        $validator = Validator::make($request->all(), [
+            'email' => 'required|email:rfc,dns',
+            'password' => 'required',
+        ]);
+
+        if ($validator->fails()) {
+            return response()->json([
+                'message' => 'Invalid field.',
+                'errors' => $validator->error(),
+            ], 422);
+        }
+
+        $credentials = $request->only('email', 'password');
+
+        if (!Auth::attempt($credentials)) {
+            return response()->json([
+                'message' => 'Email atau password salah.',
+            ], 401);
+        }
+
+        $user = User::where('email', $request->email)->firstOrFail();
+        $token = $user->createToken('auth_token')->plainTextToken;
+
+        return response()->json([
+            'message' => 'Login berhasil!',
+            'user' => [
+                'name' => $user->name,
+                'email' => $user->email,
+                'access_token' => $token,
+            ]
+        ]);
     }
 }
