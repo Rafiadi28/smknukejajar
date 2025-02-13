@@ -71,7 +71,7 @@ class AuthController extends Controller
         }
 
         $user = User::where('email', $request->email)->firstOrFail();
-        $token = $user->createToken('auth_token')->plainTextToken;
+        $token = $user->createToken('auth_token', ['*'], now()->addMonth())->plainTextToken;
 
         return response()->json([
             'message' => 'Login berhasil!',
@@ -80,6 +80,19 @@ class AuthController extends Controller
                 'email' => $user->email,
                 'access_token' => $token,
             ]
+        ]);
+    }
+
+    /**
+     * login
+     * 
+     * @return void
+     */
+    public function logout()
+    {
+        Auth::user()->tokens()->delete();
+        return response()->json([
+            'message' => 'Logout berhasil!'
         ]);
     }
 }
