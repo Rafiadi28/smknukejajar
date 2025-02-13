@@ -18,7 +18,7 @@
                         <li>
                             <x-nav-link href="/" :active="request()->is('/')">Beranda</x-nav-link>
                         </li>
-                        <li class="relative group px-4 py-3 text-sm font-medium" :class="{'{{ request()->is('profil') ? 'bg-clr-secondary text-clr-black' : 'text-clr-white hover:bg-clr-secondary hover:text-clr-black' }}': !atTop, '{{ request()->is('profil') ? 'bg-clr-primary text-clr-white' : 'text-clr-black hover:bg-clr-primary hover:text-clr-white' }}': atTop}" aria-current="{{ request()->is('profil') ? 'page' : false }}" type="button" aria-expanded="isOpen" aria-haspopup="true" aria-hidden="!isOpen">
+                        <li class="relative group px-4 py-3 text-sm" :class="{'{{ request()->is('profil') ? 'bg-clr-secondary text-clr-black' : 'text-clr-white hover:bg-clr-secondary hover:text-clr-black font-medium' }}': !atTop, '{{ request()->is('profil') ? 'bg-clr-primary text-clr-white' : 'text-clr-black hover:bg-clr-primary hover:text-clr-white font-semibold' }}': atTop}" aria-current="{{ request()->is('profil') ? 'page' : false }}" type="button" aria-expanded="isOpen" aria-haspopup="true" aria-hidden="!isOpen">
                             <!-- Toggle Button -->
                             <a href="/profil" class="flex">
                                 Profil
@@ -34,7 +34,7 @@
                                 <x-nav-link href="/ppdb" :active="request()->is('ppdb')">Ekstrakulikuler</x-nav-link>
                             </div>
                         </li>
-                        <li class="relative group px-4 py-3 text-sm font-medium" :class="{'{{ request()->is('jurusan') ? 'bg-clr-secondary text-clr-black' : 'text-clr-white hover:bg-clr-secondary hover:text-clr-black' }}': !atTop, '{{ request()->is('jurusan') ? 'bg-clr-primary text-clr-white' : 'text-clr-black hover:bg-clr-primary hover:text-clr-white' }}': atTop}" aria-current="{{ request()->is('jurusan') ? 'page' : false }}" type="button" aria-expanded="isOpen" aria-haspopup="true" aria-hidden="!isOpen">
+                        <li class="relative group px-4 py-3 text-sm" :class="{'{{ request()->is('jurusan') ? 'bg-clr-secondary text-clr-black' : 'text-clr-white hover:bg-clr-secondary hover:text-clr-black font-medium' }}': !atTop, '{{ request()->is('jurusan') ? 'bg-clr-primary text-clr-white' : 'text-clr-black hover:bg-clr-primary hover:text-clr-white font-semibold' }}': atTop}" aria-current="{{ request()->is('jurusan') ? 'page' : false }}" type="button" aria-expanded="isOpen" aria-haspopup="true" aria-hidden="!isOpen">
                             <!-- Toggle Button -->
                             <a href="/jurusan" class="flex">
                                 Jurusan
