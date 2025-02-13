@@ -90,7 +90,7 @@ class AuthController extends Controller
      */
     public function logout()
     {
-        Auth::user()->tokens()->delete();
+        Auth::user()->tokens()->delete(); //kode tidak bermasalah
         return response()->json([
             'message' => 'Logout berhasil!'
         ]);

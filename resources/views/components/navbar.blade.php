@@ -8,7 +8,7 @@
                 <template x-if="!atTop">
                     <img class="h-20 w-20" src="/img/logo-smk/logo-smk-putih.svg" alt="SMK NU Kejajar">
                 </template>
-                <span class="font-bold text-4xl text-black" :class="{'text-white': !atTop || isOpen }">SMK NU Kejajar</span>
+                <span class="font-bold text-4xl" :class="!atTop || isOpen ? 'text-clr-white' : 'text-clr-black'">SMK NU Kejajar</span>
             </div>
             <div class="hidden lg:block">
                 <div class="ml-10 flex items-baseline space-x-1">
